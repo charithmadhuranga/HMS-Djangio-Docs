@@ -9,4 +9,5 @@
     <toc-element topic="overview.md"/>
     <toc-element topic="Getting-Started.md"/>
     <toc-element topic="Developer-Guide.md"/>
+    <toc-element topic="Deployment-Guide.md"/>
 </instance-profile>
