@@ -8,7 +8,7 @@
 This project is a **Doctor Channeling System** built using **Django** and **Bootstrap 5**, integrating:
 
 - **Stripe & PayPal** for payment processing.
-- **Mailgun (Anymail)** for email notifications.
+- **Mailgun or resend (Anymail)** for email notifications.
 - **Custom user authentication** (Doctors & Patients).
 - **Appointment scheduling and medical records management**.
 

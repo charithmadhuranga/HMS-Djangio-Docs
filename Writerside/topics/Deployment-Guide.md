@@ -111,12 +111,13 @@ DATABASE_URL=postgres://username:password@your-rds-endpoint:5432/dbname
 AWS_ACCESS_KEY_ID=your_aws_access_key
 AWS_SECRET_ACCESS_KEY=your_aws_secret_key
 AWS_STORAGE_BUCKET_NAME=my-hms-media
-EMAIL_BACKEND=anymail.backends.mailgun.EmailBackend
-MAILGUN_API_KEY=your_mailgun_api_key
-MAILGUN_SENDER_DOMAIN=your_mailgun_sender_domain
+EMAIL_BACKEND=anymail.backends.resend.EmailBackend
+RESEND_API_KEY=your_resend_api_key
+RESEND_SENDER_DOMAIN=your_resend_sender_domain
 DEFAULT_FROM_EMAIL=your_default_email@example.com
 ```
 
+you have to customize default setting in setting.py file accordingly for the postgres database as default is using sqlite db
 ## **5. Configure Django for S3 Storage**
 Install required packages:
 ```bash
