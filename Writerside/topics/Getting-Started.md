@@ -3,41 +3,7 @@
 
 # Initial Setup  Guide
 
-## Step 1 : using uv package manager or pip (macos and linux)
-
-using uv package manager
-```
-uv venv
-
-. .venv/bin/activate
-
-##for windows you only have to change the virutlenv activating method to .\venv\Scripts\activate
-
-uv sync 
-python manage.py makemigrations
-python manage.py migrate
-python manage.py createsuperuser 
-```
-
-using pip package manager
-
-```
-pip3 install virtualenv
-
-virtualenv .venv
-
-. .venv/bin/activate
-
-##for windows you only have to change the virutlenv activating method to .\venv\Scripts\activate
-
-pip install -r requirements.txt
-python manage.py makemigrations
-python manage.py migrate
-python manage.py createsuperuser 
-```
-
-
-## Step 2 :  create .env file and add all necessary api keys.Use .env.example as a base.
+## Step 1 :  create .env file and add all necessary api keys.Use .env.example as a base.
 
 ```ini
 # Django Secret Key
@@ -74,10 +40,45 @@ cp .env.example .env
 
 #edit above .env file and add api keys for email backend,stripe,paypal and allowdhost,csrf trusted host accordingly
 
+
+```
+
+## Step 2 : using uv package manager or pip (macos and linux)
+
+using uv package manager
+```
+uv venv
+
+. .venv/bin/activate
+
+##for windows you only have to change the virutlenv activating method to .\venv\Scripts\activate
+
+uv sync 
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser 
 python manage.py runserver
 
 ```
 
+using pip package manager
+
+```
+pip3 install virtualenv
+
+virtualenv .venv
+
+. .venv/bin/activate
+
+##for windows you only have to change the virutlenv activating method to .\venv\Scripts\activate
+
+pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser 
+python manage.py runserver
+
+```
 
 ## Step 3 :  adding  medical service to the system using admin panel
 
